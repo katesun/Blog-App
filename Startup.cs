@@ -9,6 +9,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Cors.Internal;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
+
 
 namespace BlogApp
 {
@@ -24,7 +28,15 @@ namespace BlogApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
+            
             services.AddMvc();
+
+
+            //services.Configure<MvcOptions>(options =>
+            //{
+            //    options.Filters.Add(new CorsAuthorizationFilterFactory("AllowAnyOrigin"));
+            //});
 
             var sqlConnectionString = Configuration.GetConnectionString("DATABASE_URL");
             services.AddDbContext<Database.ApplicationDbContext>(options =>
@@ -42,6 +54,10 @@ namespace BlogApp
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(
+                options => options.WithOrigins("http://localhost:3000").AllowAnyMethod()
+                );
 
             app.UseMvc();
         }

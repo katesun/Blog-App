@@ -16,6 +16,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.2" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.0.1" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.1" />
+    <PackageReference Include="System.Net.Http" Version="4.3.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.0.2" />
   </ItemGroup>
 
   <ItemGroup>
