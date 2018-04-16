@@ -19,3 +19,14 @@
 /Users/katesun/development/BlogApp/BlogAppAPI/obj/Debug/netcoreapp2.0/BlogApp.dll
 /Users/katesun/development/BlogApp/BlogAppAPI/obj/Debug/netcoreapp2.0/BlogApp.pdb
 /Users/katesun/development/BlogApp/BlogAppAPI/obj/Debug/netcoreapp2.0/BlogApp.csprojResolveAssemblyReference.cache
+/Users/katesun/development/blog-app/blog-app-api/bin/Debug/netcoreapp2.0/BlogApp.deps.json
+/Users/katesun/development/blog-app/blog-app-api/bin/Debug/netcoreapp2.0/BlogApp.runtimeconfig.json
+/Users/katesun/development/blog-app/blog-app-api/bin/Debug/netcoreapp2.0/BlogApp.runtimeconfig.dev.json
+/Users/katesun/development/blog-app/blog-app-api/bin/Debug/netcoreapp2.0/BlogApp.dll
+/Users/katesun/development/blog-app/blog-app-api/bin/Debug/netcoreapp2.0/BlogApp.pdb
+/Users/katesun/development/blog-app/blog-app-api/obj/Debug/netcoreapp2.0/BlogApp.csprojResolveAssemblyReference.cache
+/Users/katesun/development/blog-app/blog-app-api/obj/Debug/netcoreapp2.0/BlogApp.csproj.CoreCompileInputs.cache
+/Users/katesun/development/blog-app/blog-app-api/obj/Debug/netcoreapp2.0/BlogApp.AssemblyInfoInputs.cache
+/Users/katesun/development/blog-app/blog-app-api/obj/Debug/netcoreapp2.0/BlogApp.AssemblyInfo.cs
+/Users/katesun/development/blog-app/blog-app-api/obj/Debug/netcoreapp2.0/BlogApp.dll
+/Users/katesun/development/blog-app/blog-app-api/obj/Debug/netcoreapp2.0/BlogApp.pdb
