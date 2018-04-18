@@ -12623,13 +12623,13 @@
       "projectName": "BlogApp",
       "projectPath": "/Users/katesun/development/blog-app/blog-app-api/BlogApp.csproj",
       "packagesPath": "/Users/katesun/.nuget/packages/",
-      "outputPath": "/Users/katesun/development/blog-app/blog-app-api/obj",
+      "outputPath": "/Users/katesun/development/blog-app/blog-app-api/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/katesun/.config/NuGet/NuGet.Config"
+        "/Users/katesun/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -12651,39 +12651,38 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.6"
-          },
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "2.0.2"
-          },
-          "Microsoft.EntityFrameworkCore.Design": {
-            "target": "Package",
-            "version": "2.0.2"
-          },
-          "Npgsql.EntityFrameworkCore.PostgreSQL": {
-            "target": "Package",
-            "version": "2.0.1"
-          },
-          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
-            "target": "Package",
-            "version": "1.1.1"
-          },
-          "System.Net.Http": {
-            "target": "Package",
-            "version": "4.3.3"
+            "version": "[2.0.6, )"
           },
           "Microsoft.AspNetCore.Cors": {
             "target": "Package",
-            "version": "2.0.2"
+            "version": "[2.0.2, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "target": "Package",
+            "version": "[2.0.1, )"
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+            "target": "Package",
+            "version": "[1.1.1, )"
+          },
+          "System.Net.Http": {
+            "target": "Package",
+            "version": "[4.3.3, )"
           }
         },
         "imports": [
