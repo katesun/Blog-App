@@ -25,37 +25,13 @@ namespace BlogApp.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("CategoryID");
-
                     b.Property<string>("Content");
 
-                    b.Property<string>("Title");
+                    b.Property<string>("Titles");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryID");
-
                     b.ToTable("Blogs");
-                });
-
-            modelBuilder.Entity("BlogApp.Entities.Category", b =>
-                {
-                    b.Property<int>("CategoryID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Name");
-
-                    b.HasKey("CategoryID");
-
-                    b.ToTable("Categories");
-                });
-
-            modelBuilder.Entity("BlogApp.Entities.Blog", b =>
-                {
-                    b.HasOne("BlogApp.Entities.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryID")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

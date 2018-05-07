@@ -9,6 +9,5 @@ namespace BlogApp.Database
         {
         }
         public DbSet<Entities.Blog> Blogs { get; set; }
-        public DbSet<Entities.Category> Categories { get; set; }
     }
 }
