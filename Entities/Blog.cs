@@ -10,5 +10,8 @@ namespace BlogApp.Entities
         public int Id { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
+
+        public int CategoryID { get; set; }
+        public Category Category { get; set; }
     }
 }

@@ -1,13 +1,12 @@
 ﻿<Properties StartupConfiguration="{17D768EC-EB9B-4E2D-AC90-6E9B238C8D04}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/BlogsController.cs">
     <Files>
-      <File FileName="BlogApp.csproj" Line="19" Column="67" />
-      <File FileName="appsettings.json" Line="16" Column="96" />
+      <File FileName="Startup.cs" Line="52" Column="41" />
+      <File FileName="Controllers/CategoriesController.cs" Line="20" Column="9" />
+      <File FileName="Controllers/BlogsController.cs" Line="6" Column="37" />
+      <File FileName="Entities/Blog.cs" Line="12" Column="34" />
+      <File FileName="Entities/Category.cs" Line="11" Column="10" />
       <File FileName="Database/ApplicationDbContext.cs" Line="10" Column="10" />
-      <File FileName="Startup.cs" Line="14" Column="33" />
-      <File FileName="Controllers/ValuesController.cs" Line="11" Column="14" />
-      <File FileName="Migrations/ApplicationDbContextModelSnapshot.cs" Line="1" Column="1" />
-      <File FileName="Program.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -3,31 +3,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace BlogApp.Controllers
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class BlogsController : Controller
     {
         Database.ApplicationDbContext dbContext;
 
-        public ValuesController(Database.ApplicationDbContext dbContext)
+        public BlogsController(Database.ApplicationDbContext dbContext)
         {
             this.dbContext = dbContext;
         }
+
         // GET api/values
         [HttpGet]
         public IEnumerable<Entities.Blog> Get()
         {
-            return dbContext.Blogs;
+            return dbContext.Blogs
+                            .Include(t => t.Category);
+
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public Entities.Blog Get(int id)
         {
-            return dbContext.Blogs.Where(t => t.Id == id).FirstOrDefault();
+            return dbContext.Blogs
+                            .Include(t => t.Category)
+                            .Where(t => t.Id == id)
+                            .FirstOrDefault();
+
         }
 
         // POST api/values
